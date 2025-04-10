@@ -1,6 +1,6 @@
 locals {
     BASENAME = "iaas-spr-2"
-    ZONE     = "us-east-2"
+    ZONE     = "us-south-2"
 }
 
 resource "ibm_is_vpc" "vpc" {
@@ -77,7 +77,7 @@ resource "ibm_is_instance" "vsi3" {
     name    = "${local.BASENAME}-vsi3"
     vpc     = ibm_is_vpc.vpc.id
     zone    = local.ZONE
-    keys    = ["r014-00f00457-2576-424f-afc3-78ad167503e3"]
+    keys    = ["r006-bda3ed05-4374-4df9-a789-46ef8d9d3228"]
     image   = data.ibm_is_image.ubuntu.id
     profile = "cx2d-32x64"
 
