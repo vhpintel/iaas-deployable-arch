@@ -8,6 +8,7 @@ stages:
         type: script
         script: |
           export TF_VAR_region=$ibmcloud_region
+          export TF_VAR_ssh_key="$ssh_key"
           terraform init
           terraform plan
           terraform apply -auto-approve
