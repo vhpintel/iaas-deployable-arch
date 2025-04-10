@@ -1,0 +1,21 @@
+{
+    "parameters": [
+      {
+        "name": "ibmcloud_region",
+        "type": "string",
+        "default": "us-east",
+        "description": "IBM Cloud region"
+      },
+      {
+        "name": "vpc_name",
+        "type": "string",
+        "description": "Name of the VPC to create"
+      }
+      {
+        "name": "ibmcloud_api_key",
+        "type": "string",
+        "description": "IBM Cloud API Key"
+      }
+    ]
+  }
+  

@@ -1,0 +1,13 @@
+stages:
+  - name: Terraform
+    inputs:
+      type: git
+      service: githubpublic
+    jobs:
+      - name: terraform-job
+        type: script
+        script: |
+          export TF_VAR_region=$ibmcloud_region
+          terraform init
+          terraform plan
+          terraform apply -auto-approve
