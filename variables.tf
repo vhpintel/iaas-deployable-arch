@@ -6,7 +6,7 @@ variable "ibmcloud_api_key" {
 variable "ibmcloud_region" {
   description = "IBM Cloud Region"
   type        = string
-  default     = ""
+  default     = "us-east"
 }
 variable "vpc_name" {
   description = "VPC name"

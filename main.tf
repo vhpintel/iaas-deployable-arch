@@ -4,7 +4,7 @@ variable "ssh_key" {
 
 locals {
     BASENAME = "iaas-spr-2"
-    ZONE     = "us-south-1"
+    ZONE     = "us-east-2"
 }
 
 resource "ibm_is_vpc" "vpc" {

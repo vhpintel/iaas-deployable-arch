@@ -18,9 +18,9 @@
                     "install_type": "fullstack",
                     "configuration": [
                         {
-                            "key": "ssh-key",
+                            "key": "ssh_key",
                             "type": "string",
-                            "default_value": "ssh-key",
+                            "default_value": "ssh_key",
                             "description": "This variable specifies the ssh key.",
                             "required": true
                         }
